@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		56EAB2841F94537900EF3D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EAB2831F94537900EF3D06 /* AppDelegate.swift */; };
-		56EAB2861F94537900EF3D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56EAB2851F94537900EF3D06 /* Assets.xcassets */; };
-		56EAB2891F94537900EF3D06 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EAB2871F94537900EF3D06 /* MainMenu.xib */; };
+		56EAB2921F94538A00EF3D06 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EAB2911F94538A00EF3D06 /* main.swift */; };
+		56EAB2941F9453CA00EF3D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EAB2931F9453CA00EF3D06 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56EAB2801F94537900EF3D06 /* Programmatic Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Programmatic Views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56EAB2831F94537900EF3D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56EAB2851F94537900EF3D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		56EAB2881F94537900EF3D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		56EAB28A1F94537900EF3D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56EAB28B1F94537900EF3D06 /* Programmatic_Views.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Programmatic_Views.entitlements; sourceTree = "<group>"; };
+		56EAB2911F94538A00EF3D06 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		56EAB2931F9453CA00EF3D06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +52,10 @@
 			isa = PBXGroup;
 			children = (
 				56EAB2831F94537900EF3D06 /* AppDelegate.swift */,
-				56EAB2851F94537900EF3D06 /* Assets.xcassets */,
-				56EAB2871F94537900EF3D06 /* MainMenu.xib */,
 				56EAB28A1F94537900EF3D06 /* Info.plist */,
 				56EAB28B1F94537900EF3D06 /* Programmatic_Views.entitlements */,
+				56EAB2911F94538A00EF3D06 /* main.swift */,
+				56EAB2931F9453CA00EF3D06 /* ViewController.swift */,
 			);
 			path = "Programmatic Views";
 			sourceTree = "<group>";
@@ -119,8 +119,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56EAB2861F94537900EF3D06 /* Assets.xcassets in Resources */,
-				56EAB2891F94537900EF3D06 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,22 +129,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56EAB2941F9453CA00EF3D06 /* ViewController.swift in Sources */,
+				56EAB2921F94538A00EF3D06 /* main.swift in Sources */,
 				56EAB2841F94537900EF3D06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		56EAB2871F94537900EF3D06 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56EAB2881F94537900EF3D06 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		56EAB28C1F94537900EF3D06 /* Debug */ = {
@@ -258,13 +247,13 @@
 		56EAB28F1F94537900EF3D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Programmatic Views/Programmatic_Views.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = U4T3RQVCBL;
+				DEVELOPMENT_TEAM = 92E3TM2LT5;
 				INFOPLIST_FILE = "Programmatic Views/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charleskenney.Programmatic-Views";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -274,13 +263,13 @@
 		56EAB2901F94537900EF3D06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Programmatic Views/Programmatic_Views.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = U4T3RQVCBL;
+				DEVELOPMENT_TEAM = 92E3TM2LT5;
 				INFOPLIST_FILE = "Programmatic Views/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charleskenney.Programmatic-Views";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
